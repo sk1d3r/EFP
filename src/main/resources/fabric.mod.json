@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "efp",
+  "version": "${version}",
+  "name": "EFP",
+  "description": "Убирает задержку между установкой блоков при зажатой правой кнопке мыши. Вкл/выкл: клавиша J.",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.efp.EFPClient"
+    ]
+  },
+  "mixins": [
+    "efp.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "fabric-api": "*",
+    "minecraft": "~26.3",
+    "java": ">=25"
+  }
+}
